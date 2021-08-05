@@ -1,9 +1,6 @@
 # Crossql
 Crossql will assist astronomers in dealing with automated sky data crossmatching within astronomical databases.
 
-# Intended Audience
-Astronomers and the wider scientific community.
-
 # Intended Use
 To facilitate the crossmatch of two or more tables in a postgres database producing a third table with the results of the crossmatch. 
 
