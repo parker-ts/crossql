@@ -1,0 +1,17 @@
+SQLActions[]={
+"BEGIN INSTALL
+BEGIN PostgreSQL
+CREATE OR REPLACE FUNCTION hello(
+	toWhom pg_catalog.varchar)
+	RETURNS pg_catalog.varchar
+	LANGUAGE java VOLATILE
+	AS e'java.lang.String=helloworld.hello(java.lang.String)'
+END PostgreSQL;
+END INSTALL",
+"BEGIN REMOVE
+BEGIN PostgreSQL
+DROP FUNCTION hello(
+	toWhom pg_catalog.varchar)
+END PostgreSQL;
+END REMOVE"
+}
